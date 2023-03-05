@@ -31,7 +31,46 @@ body {
 /* -------------------------  Main  ----------------------------- */
 
 header {
-    align-items: center;
+    text-align: center;
 }
 
-/* -------------------------  Bottom of the page   ----------------------------- */
+.button-style {
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#new {
+    background-color: #56536A;
+    width: 120px;
+}
+
+#theme {
+    background-color: black;
+    width: 140px;
+}
+
+#save {
+    background-color: #256993;
+    width: 90px;
+}
+
+#cancel {
+    background-color: #9B332C;
+    width: 100px;
+}
+
+/* ------------------------  Bottom of the page   ----------------------------- */
+
+.keepintouch-container{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
