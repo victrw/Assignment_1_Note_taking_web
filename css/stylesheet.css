@@ -1,3 +1,35 @@
 body {
     font-family: 'Inter', sans-serif;
+    color: #375F68;
+    background-color: #FAF4EC
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    position: relative;
+    padding-left: 260px;
+}
+/* -------------------------  Sidebar  -----------------------------  */
+
+.my-notes-container {
+    background-color: #F3E9DE;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+    width: 200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 100%;
+}
+
+/* -------------------------  Main  ----------------------------- */
+
+header {
+    align-items: center;
+}
+
+/* -------------------------  Bottom of the page   ----------------------------- */
