@@ -4,42 +4,44 @@ body {
     background-color: #FAF4EC
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    position: relative;
-    padding-left: 260px;
-}
 
 h1, h2 {
     font-weight: 2000;
 }
 
-ul {
-    padding: 0;
-}
 
 /* -------------------------  Sidebar  -----------------------------  */
 
+
 .my-notes-container {
-    background-color: #F3E9DE;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 200px;
-    top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    height: 100%; 
+    width: 250px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
     left: 0;
-    bottom: 0;
-    padding: 20px;
-    height: 100%;
+    background-color: #F3E9DE;
+    overflow-x: hidden; 
+    padding-top: 20px;
+    float: left;
 }
 
 #sidebar-h1 {
-    align-items: center;
-    justify-content: center;
+    align-content: center;
 }
 
 /* -------------------------  Main  ----------------------------- */
+
+.grid {
+    display: grid;
+    padding-right: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 260px;
+    
+}
 
 
 .better-note-grid {
@@ -55,7 +57,7 @@ ul {
     text-align: center;
     text-decoration: none;
     font-size: 15px;
-    margin: 4px 2px;
+    margin-right: 14px;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -68,11 +70,14 @@ ul {
 #theme {
     background-color: black;
     width: 140px;
+    grid-column: 3;
+    align-content: right;
 }
 
 #save {
     background-color: #256993;
     width: 90px;
+    grid-column: 1/2;
 }
 
 #cancel {
@@ -82,6 +87,8 @@ ul {
 
 .textarea {
     border: 2px lightblue solid;
+    grid-column: 1/4;
+    margin: 10px 0px 10px;
 }
 
 
