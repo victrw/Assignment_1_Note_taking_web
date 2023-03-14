@@ -6,7 +6,7 @@ body {
 
 
 h1, h2 {
-    font-weight: 2000;
+    font-weight: bolder;
 }
 
 
@@ -30,7 +30,8 @@ h1, h2 {
 }
 
 #sidebar-h1 {
-    align-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* -------------------------  Main  ----------------------------- */
