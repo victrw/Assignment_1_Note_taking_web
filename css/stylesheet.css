@@ -1,5 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #375F68;
     background-color: #FAF4EC
 }
@@ -31,7 +32,7 @@ h1, h2 {
 
 #sidebar-h1 {
     text-align: center;
-    margin: 0 auto;
+    /* padding-top: 15px; */
 }
 
 /* -------------------------  Main  ----------------------------- */
@@ -45,8 +46,8 @@ h1, h2 {
 }
 
 
-.better-note-grid {
-    display:grid;
+.better-note-container {
+    display:flex;
     justify-content: center;
     position: relative;
 }
