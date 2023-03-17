@@ -1,7 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #375F68;
-    background-color: #FAF4EC
+    background-color: #FAF4EC;
+    height: 60px;
 }
 
 
@@ -24,8 +25,11 @@ body {
 
 #sidebar-h1 {
     text-align: center;
-    margin-top: 7%;
+    font-size: 2em;
+}
 
+ul {
+    list-style-type: square;
 }
 
 /* -------------------------  Main  ----------------------------- */
@@ -36,6 +40,7 @@ body {
     justify-content: center;
     position: relative;
     margin-left: 26%;
+    height: 100%;
 }
 
 .maincontainer {
@@ -47,7 +52,7 @@ body {
 
 #aboutDocs {
     text-align: right;
-    margin-right: 2%;
+    margin-right: 1%;
 }
 
 .button-style {
@@ -95,7 +100,9 @@ body {
 .textarea {
     border: 3px lightblue solid;
     margin: 1% 0.5% 1% 0;
-    width: 99%;
+    width: 97%;
+    padding: 12px 20px;
+    border-radius: 5px;
 }
 
 
@@ -103,9 +110,18 @@ body {
 
 .keepintouch-container{
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 73.5%;
     clear: both;
     margin-left: 26%;
+    height: 8em;
+}
+
+
+
+/* ------------------------  Media   ----------------------------- */
+
+@media screen and (max-width:600px) {
+
 }
