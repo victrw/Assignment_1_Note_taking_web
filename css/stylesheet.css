@@ -125,22 +125,10 @@ ul {
 
 @media screen and (max-width:600px) {
     .my-notes-container {
-        width: 100%;
+        bottom: 0vh;
     
-        
     }
 
-    .better-note-container {
-        margin: auto;
-    }
+    
 
-    .maincontainer {
-        margin: auto;
-        width: auto;
-    }
-
-    .keepintouch-container {
-        width: 100%;
-        margin: auto;
-    }
 }
