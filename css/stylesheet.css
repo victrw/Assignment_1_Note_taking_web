@@ -24,6 +24,7 @@ body {
 
 #sidebar-h1 {
     text-align: center;
+    margin-top: 7%;
 
 }
 
@@ -69,7 +70,7 @@ body {
 .bottombuttons {
     display:flex;
     flex-direction: row-reverse;
-    gap: 1%;
+    gap: 0.5%;
     margin-right: 0.5%;
 }
 
