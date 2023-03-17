@@ -66,18 +66,17 @@ ul {
     cursor: pointer;
     border-radius: 8px;
     white-space: nowrap;
+    margin-right: 1%;
 }
 
 .topbuttons {
     display:flex;
-    margin-right: 0.5%;
 }
 
 .bottombuttons {
     display:flex;
     flex-direction: row-reverse;
     gap: 0.5%;
-    margin-right: 0.5%;
 }
 
 #new {
