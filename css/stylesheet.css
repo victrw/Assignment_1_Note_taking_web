@@ -125,10 +125,28 @@ ul {
 
 @media screen and (max-width:600px) {
     .my-notes-container {
-        bottom: 0vh;
-    
+        float: none;
+        position: relative;
+        height: 26vh;
+        width: 100%;
+        top: auto;
+        left: auto;
     }
 
-    
+    .maincontainer {
+        margin: 2%;
+        width: 95%;
+        height: 55vh;
+    }
+
+    .textarea {
+        width: 90%;
+    }
+
+    .keepintouch-container {
+        margin: 0;
+        width: 100%;
+    }
+
 
 }
