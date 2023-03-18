@@ -1,8 +1,13 @@
+html {
+    min-height: 100vh;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #375F68;
     background-color: #FAF4EC;
     margin: 0;
+    min-height: 100vh;
 }
 
 
@@ -48,7 +53,7 @@ ul {
     flex-direction: column;
     margin-left: 26%;
     width: 74%;
-    height: 90vh;
+    height: 75vh;
 }
 
 #aboutDocs {
@@ -66,18 +71,17 @@ ul {
     cursor: pointer;
     border-radius: 8px;
     white-space: nowrap;
+    margin-right: 1%;
 }
 
 .topbuttons {
     display:flex;
-    margin-right: 0.5%;
 }
 
 .bottombuttons {
     display:flex;
     flex-direction: row-reverse;
     gap: 0.5%;
-    margin-right: 0.5%;
 }
 
 #new {
@@ -100,8 +104,8 @@ ul {
 
 .textarea {
     border: 3px lightblue solid;
-    margin: 1% 0.5% 1% 0;
-    width: 97%;
+    margin: 1% 1% 1% 0%;
+    width: auto;
     padding: 12px 18px;
     border-radius: 5px;
 }
@@ -116,7 +120,7 @@ ul {
     width: 73.5%;
     clear: both;
     margin-left: 26%;
-    height: 5vh;
+    height: 10vh;
 }
 
 
@@ -127,26 +131,27 @@ ul {
     .my-notes-container {
         float: none;
         position: relative;
-        height: 26vh;
+        height: 25vh;
         width: 100%;
         top: auto;
         left: auto;
+        margin: auto;
     }
 
     .maincontainer {
-        margin: 2%;
-        width: 95%;
+        width: 98%;
         height: 55vh;
+        margin: auto;
     }
 
     .textarea {
-        width: 90%;
+        width: auto;
     }
 
     .keepintouch-container {
-        margin: 0;
+        margin: auto;
         width: 100%;
+        height: 5vh;
     }
-
 
 }
