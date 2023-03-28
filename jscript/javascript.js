@@ -6,7 +6,7 @@ function darktheme(e) {
     if (e.target.tagName === "BUTTON") {
         document.body.classList.add("darkBG")
         const darksidebar = document.querySelector('.my-notes-container')
-        darksidebar.classList.add('darkBG')
+        darksidebar.classList.add('sidebardarkBG')
     }
 }
 

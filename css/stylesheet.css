@@ -8,15 +8,15 @@ body {
     background-color: #FAF4EC;
     margin: 0;
     min-height: 100vh;
+    clear: left;
+    overflow: auto;
 }
 
 .darkBG {
     background-color:#212121;
+    color: wheat;
 }   
 
-.sidebardarkBG {
-    background-color: #4D4D4D;
-}
 
 /* -------------------------  Sidebar  -----------------------------  */
 
@@ -39,6 +39,11 @@ body {
 
 ul {
     list-style-type: square;
+}
+
+.sidebardarkBG {
+    background-color: #404040;
+    color: wheat;
 }
 
 /* -------------------------  Main  ----------------------------- */
