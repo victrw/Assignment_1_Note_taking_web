@@ -10,11 +10,15 @@ body {
     min-height: 100vh;
 }
 
+.darkBG {
+    background-color:#212121;
+}   
 
-
+.sidebardarkBG {
+    background-color: #4D4D4D;
+}
 
 /* -------------------------  Sidebar  -----------------------------  */
-
 
 .my-notes-container {
     display: grid;
