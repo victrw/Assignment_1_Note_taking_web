@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
     height: 100%; 
-    width: 25%; 
+    width: 20%; 
     position: fixed; 
     background-color: #F3E9DE;
     float: left;
@@ -51,8 +51,8 @@ ul {
 .maincontainer {
     display: flex;
     flex-direction: column;
-    margin-left: 26%;
-    width: 74%;
+    margin-left: 21%;
+    width: 79%;
     height: 75vh;
 }
 
@@ -117,9 +117,9 @@ ul {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 73.5%;
+    width: 78.5%;
     clear: both;
-    margin-left: 26%;
+    margin-left: 21%;
     height: auto;
     display: inline-block;
 }
