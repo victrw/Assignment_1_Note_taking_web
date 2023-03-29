@@ -137,9 +137,16 @@ ul {
 }
 
 .lightthemebutton {
-    background-color: white;
-    color: black;
+    background-color: #FAF4EC;
+    color: black;   
 }
+
+.darktextarea {
+    background-color: #242424;
+    color: white;
+    border: solid 2px wheat;
+}
+
 /* ------------------------  Media   ----------------------------- */
 
 @media screen and (max-width:600px) {
