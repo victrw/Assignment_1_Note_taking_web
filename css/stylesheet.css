@@ -12,11 +12,6 @@ body {
     overflow: auto;
 }
 
-.darkBG {
-    background-color:#212121;
-    color: wheat;
-}   
-
 
 /* -------------------------  Sidebar  -----------------------------  */
 
@@ -41,10 +36,6 @@ ul {
     list-style-type: square;
 }
 
-.sidebardarkBG {
-    background-color: #404040;
-    color: wheat;
-}
 
 /* -------------------------  Main  ----------------------------- */
 
@@ -98,7 +89,7 @@ ul {
     margin-right: auto;
 }
 
-#theme {
+.theme {
     background-color: black;
     margin-left: auto;
 }
@@ -119,7 +110,6 @@ ul {
     border-radius: 5px;
 }
 
-
 /* ------------------------  Bottom of the page   ----------------------------- */
 
 .keepintouch-container{
@@ -133,8 +123,23 @@ ul {
     display: inline-block;
 }
 
+/* ------------------------  Dark Theme   ----------------------------- */
 
 
+.darkBG {
+    background-color:#212121;
+    color: wheat;
+}   
+
+.sidebardarkBG {
+    background-color: #404040;
+    color: wheat;
+}
+
+.lightthemebutton {
+    background-color: white;
+    color: black;
+}
 /* ------------------------  Media   ----------------------------- */
 
 @media screen and (max-width:600px) {
