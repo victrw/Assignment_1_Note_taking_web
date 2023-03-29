@@ -9,14 +9,14 @@ function darktheme(e) {
     if (e.target.tagName === "BUTTON") {
         document.body.classList.toggle("darkBG")
         darksidebar.classList.toggle('sidebardarkBG')
+        darkthemebutton.classList.toggle("lightthemebutton");
+        txtarea.classList.toggle("darktextarea");
+        txtarea.classList.toggle("darktextareatxt")
         if (darkthemebutton.textContent === "Dark Theme") {
             darkthemebutton.textContent = "Light Theme";
-            darkthemebutton.classList.add("lightthemebutton") 
-            txtarea.classList.add("darktextarea")
+
         } else {
             darkthemebutton.textContent = "Dark Theme";
-            darkthemebutton.classList.remove("lightthemebutton")
-            txtarea.classList.remove("darktextarea")
         }
     }
 }

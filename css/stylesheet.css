@@ -147,6 +147,10 @@ ul {
     border: solid 2px wheat;
 }
 
+.darktextareatxt::placeholder {
+    color: wheat
+}
+
 /* ------------------------  Media   ----------------------------- */
 
 @media screen and (max-width:600px) {
