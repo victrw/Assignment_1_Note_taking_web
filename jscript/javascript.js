@@ -6,6 +6,11 @@ const bottom_buttons = document.querySelector(".bottombuttons")
 const new_button = document.querySelector("#new")
 darkthemebutton.textContent = "Dark Theme"
 
+const notesarray = [
+    {title: "note one", body: "this is my first note"},
+    {title: "note two", body: "this is my second note"}
+]
+
 // dark theme button 
 function darktheme(e) {
     if (e.target.tagName === "BUTTON") {
