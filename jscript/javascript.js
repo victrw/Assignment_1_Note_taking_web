@@ -63,8 +63,14 @@ function revealcontent(e) {
 new_button.addEventListener("click", revealcontent);
 
 
+//adds a title, creates a new bullet, and saves content
 function savenotes(e) {
-    userinput = prompt("Please add a title!")
+    do {
+        userinput = prompt ("Please enter a title!");
+        if (userinput.length == 0) {
+            alert("Enter something >:(");
+        }
+    } while (userinput.length == 0);
     const bodytxt = txtarea.value;
     notesarray.push(
         {title: userinput,
@@ -80,15 +86,13 @@ function savenotes(e) {
 save_button.addEventListener("click", savenotes)
 
 
+//when clicking notes on sidebar, brings out it's saved content
 function noteclick(e) {
-    console.log(e.target)
     if (e.target.tagName === "LI") {
-        console.log(e.target.tagName)
+        // console.log(e.target.tagName)
         const title = e.target.textContent
         for (let item of notesarray) {
-            console.log(e.target.tagName)
             if (item.title === title) {
-                console.log(e.target.tagName)
                 txtarea.value = item.body;
                 break
             }
