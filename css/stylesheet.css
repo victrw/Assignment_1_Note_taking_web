@@ -33,8 +33,11 @@ body {
 }
 
 ul {
-    list-style-type: square;
+    display: block;
+    list-style-type: square; 
 }
+
+
 
 
 /* -------------------------  Main  ----------------------------- */
@@ -137,7 +140,7 @@ ul {
 }
 
 .lightthemebutton {
-    background-color: #FAF4EC;
+    background-color: #e9ddcf;
     color: black;   
 }
 

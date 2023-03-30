@@ -78,3 +78,26 @@ function savenotes(e) {
 }
 
 save_button.addEventListener("click", savenotes)
+
+
+function noteclick(e) {
+    console.log(e.target)
+    if (e.target.tagName === "LI") {
+        console.log(e.target.tagName)
+        const title = e.target.textContent
+        for (let item of notesarray) {
+            console.log(e.target.tagName)
+            if (item.title === title) {
+                console.log(e.target.tagName)
+                txtarea.value = item.body;
+                break
+            }
+
+        }
+        
+    }
+}
+
+ullist.addEventListener("click", noteclick)
+
+
