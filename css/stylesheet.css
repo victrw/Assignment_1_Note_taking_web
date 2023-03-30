@@ -8,19 +8,18 @@ body {
     background-color: #FAF4EC;
     margin: 0;
     min-height: 100vh;
+    clear: left;
+    overflow: auto;
 }
 
 
-
-
 /* -------------------------  Sidebar  -----------------------------  */
-
 
 .my-notes-container {
     display: grid;
     grid-template-rows: auto 1fr;
     height: 100%; 
-    width: 25%; 
+    width: 20%; 
     position: fixed; 
     background-color: #F3E9DE;
     float: left;
@@ -34,8 +33,17 @@ body {
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: square; 
+    clear: both;
 }
+
+li {
+    float: left;
+    clear: both;
+}
+
+
+
 
 /* -------------------------  Main  ----------------------------- */
 
@@ -51,8 +59,8 @@ ul {
 .maincontainer {
     display: flex;
     flex-direction: column;
-    margin-left: 26%;
-    width: 74%;
+    margin-left: 21%;
+    width: 79%;
     height: 75vh;
 }
 
@@ -89,16 +97,16 @@ ul {
     margin-right: auto;
 }
 
-#theme {
-    background-color: black;
+.theme {
+    background-color: rgb(32, 30, 30);
     margin-left: auto;
 }
 
-#save {
+.save {
     background-color: #256993;
 }
 
-#cancel {
+.cancel {
     background-color: #9B332C;
 }
 
@@ -110,21 +118,52 @@ ul {
     border-radius: 5px;
 }
 
-
 /* ------------------------  Bottom of the page   ----------------------------- */
 
 .keepintouch-container{
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 73.5%;
+    width: 78.5%;
     clear: both;
-    margin-left: 26%;
+    margin-left: 21%;
     height: auto;
     display: inline-block;
 }
 
+/* ------------------------  Dark Theme   ----------------------------- */
 
+
+.darkBG {
+    background-color:#212121;
+    color: wheat;
+}   
+
+.sidebardarkBG {
+    background-color: #404040;
+    color: wheat;
+}
+
+.lightthemebutton {
+    background-color: #e9ddcf;
+    color: black;   
+}
+
+.darktextarea {
+    background-color: #242424;
+    color: white;
+    border: solid 2px wheat;
+}
+
+.darktextareatxt::placeholder {
+    color: wheat
+}
+
+/* ------------------------  Cancel Button Features   ----------------------------- */
+
+.hidecontent {
+    display: none;
+}
 
 /* ------------------------  Media   ----------------------------- */
 
