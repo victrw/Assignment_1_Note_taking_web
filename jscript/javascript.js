@@ -4,7 +4,9 @@ const txtarea = document.querySelector("textarea")
 const cancel_button = document.querySelector(".cancel")
 const bottom_buttons = document.querySelector(".bottombuttons")
 const new_button = document.querySelector("#new")
+const save_button = document.querySelector(".save")
 darkthemebutton.textContent = "Dark Theme"
+let userinput 
 
 const notesarray = [
     {title: "note one", body: "this is my first note"},
@@ -28,7 +30,6 @@ function darktheme(e) {
     }
 }
 
-
 darkthemebutton.addEventListener("click", darktheme)
 
 
@@ -47,12 +48,22 @@ cancel_button.addEventListener("click", hidecontent);
 function revealcontent(e) {
     if (e.target.tagName === "BUTTON") {
         bottom_buttons.classList.remove("hidecontent");
+        //checks to see if hideconent is there or not, and there is content in txtarea, erase
         if (!txtarea.classList.contains("hidecontent") && txtarea.value.length > 0) {
             txtarea.value = '';
         }
+        //reveals txtarea with content still attached 
         txtarea.classList.remove("hidecontent");
 
     }
 }
 
 new_button.addEventListener("click", revealcontent);
+
+
+function savenotes(e) {
+    userinput = prompt("Please add a title!")
+    console.log(userinput)
+}
+
+save_button.addEventListener("click", savenotes)
