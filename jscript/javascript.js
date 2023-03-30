@@ -5,8 +5,9 @@ const cancel_button = document.querySelector(".cancel")
 const bottom_buttons = document.querySelector(".bottombuttons")
 const new_button = document.querySelector("#new")
 darkthemebutton.textContent = "Dark Theme"
+let newNoteClicks = 0;
 
-
+// dark theme button 
 function darktheme(e) {
     if (e.target.tagName === "BUTTON") {
         document.body.classList.toggle("darkBG")
@@ -27,6 +28,7 @@ function darktheme(e) {
 darkthemebutton.addEventListener("click", darktheme)
 
 
+//cancel button, hides content
 function hidecontent(e) {
     if (e.target.tagName === "BUTTON") {
         bottom_buttons.classList.add("hidecontent");
@@ -37,13 +39,15 @@ function hidecontent(e) {
 cancel_button.addEventListener("click", hidecontent);
 
 
-
+//reveal content again when new button is clicked
 function revealcontent(e) {
     if (e.target.tagName === "BUTTON") {
-        console.log(e)
-        bottom_buttons.classList.remove("hidecontent")
-        txtarea.classList.remove("hidecontent")
+        bottom_buttons.classList.remove("hidecontent");
+        txtarea.classList.remove("hidecontent");
+        if (++newNoteClicks === 2 && txtarea.value.length > 0) {
+            txtarea.value = '';
+        }
     }
 }
 
-new_button.addEventListener("click", revealcontent)
+new_button.addEventListener("click", revealcontent);
