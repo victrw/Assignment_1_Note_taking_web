@@ -2,7 +2,8 @@ const darkthemebutton = document.querySelector(".theme")
 const darksidebar = document.querySelector('.my-notes-container')
 const txtarea = document.querySelector("textarea")
 const cancel_button = document.querySelector(".cancel")
-const save_button = document.querySelector("#save")
+const bottom_buttons = document.querySelector(".bottombuttons")
+const new_button = document.querySelector("#new")
 darkthemebutton.textContent = "Dark Theme"
 
 
@@ -28,11 +29,21 @@ darkthemebutton.addEventListener("click", darktheme)
 
 function hidecontent(e) {
     if (e.target.tagName === "BUTTON") {
-        console.log(e)
-        cancel_button.classList.add("hidecontent");
+        bottom_buttons.classList.add("hidecontent");
         txtarea.classList.add("hidecontent");
-        save_button.classList.add("hidecontent")
+    } 
+}
+
+cancel_button.addEventListener("click", hidecontent);
+
+
+
+function revealcontent(e) {
+    if (e.target.tagName === "BUTTON") {
+        console.log(e)
+        bottom_buttons.classList.remove("hidecontent")
+        txtarea.classList.remove("hidecontent")
     }
 }
 
-cancel_button.addEventListener("click", hidecontent)
+new_button.addEventListener("click", revealcontent)
