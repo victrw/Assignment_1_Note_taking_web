@@ -88,6 +88,7 @@ save_button.addEventListener("click", savenotes)
 
 //when clicking notes on sidebar, brings out it's saved content
 function noteclick(e) {
+    console.log(e)
     if (e.target.tagName === "LI") {
         // console.log(e.target.tagName)
         const title = e.target.textContent
@@ -96,7 +97,7 @@ function noteclick(e) {
                 txtarea.value = item.body;
                 break
             }
-
+        
         }
         
     }

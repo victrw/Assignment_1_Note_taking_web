@@ -33,8 +33,13 @@ body {
 }
 
 ul {
-    display: block;
     list-style-type: square; 
+    clear: both;
+}
+
+li {
+    float: left;
+    clear: both;
 }
 
 
@@ -93,7 +98,7 @@ ul {
 }
 
 .theme {
-    background-color: black;
+    background-color: rgb(32, 30, 30);
     margin-left: auto;
 }
 
