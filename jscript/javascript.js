@@ -5,9 +5,11 @@ const cancel_button = document.querySelector(".cancel")
 const bottom_buttons = document.querySelector(".bottombuttons")
 const new_button = document.querySelector("#new")
 const save_button = document.querySelector(".save")
+const ullist = document.querySelector("ul")
 darkthemebutton.textContent = "Dark Theme"
 let userinput 
-let bodytxt = txtarea.textContent
+const bodytxt = txtarea.value
+
 const notesarray = [
     {title: "note one", body: "this is my first note"},
     {title: "note two", body: "this is my second note"}
@@ -63,11 +65,16 @@ new_button.addEventListener("click", revealcontent);
 
 function savenotes(e) {
     userinput = prompt("Please add a title!")
+    const bodytxt = txtarea.value;
     notesarray.push(
         {title: userinput,
         body: bodytxt}
     )
     console.log(notesarray)
+    const new_note = document.createElement("li")
+    new_note.textContent = userinput
+    ullist.appendChild(new_note)
+
 }
 
 save_button.addEventListener("click", savenotes)
