@@ -98,7 +98,7 @@ ul {
     background-color: #256993;
 }
 
-#cancel {
+.cancel {
     background-color: #9B332C;
 }
 
@@ -149,6 +149,12 @@ ul {
 
 .darktextareatxt::placeholder {
     color: wheat
+}
+
+/* ------------------------  Cancel Button Features   ----------------------------- */
+
+.hidecontent {
+    display: none;
 }
 
 /* ------------------------  Media   ----------------------------- */
