@@ -7,7 +7,7 @@ const new_button = document.querySelector("#new")
 const save_button = document.querySelector(".save")
 darkthemebutton.textContent = "Dark Theme"
 let userinput 
-
+let bodytxt = txtarea.textContent
 const notesarray = [
     {title: "note one", body: "this is my first note"},
     {title: "note two", body: "this is my second note"}
@@ -48,7 +48,7 @@ cancel_button.addEventListener("click", hidecontent);
 function revealcontent(e) {
     if (e.target.tagName === "BUTTON") {
         bottom_buttons.classList.remove("hidecontent");
-        //checks to see if hideconent is there or not, and there is content in txtarea, erase
+        //checks to see if hidecontent is there or not, and if there is content in txtarea, erase
         if (!txtarea.classList.contains("hidecontent") && txtarea.value.length > 0) {
             txtarea.value = '';
         }
@@ -63,7 +63,11 @@ new_button.addEventListener("click", revealcontent);
 
 function savenotes(e) {
     userinput = prompt("Please add a title!")
-    console.log(userinput)
+    notesarray.push(
+        {title: userinput,
+        body: bodytxt}
+    )
+    console.log(notesarray)
 }
 
 save_button.addEventListener("click", savenotes)
