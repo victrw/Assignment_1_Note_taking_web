@@ -97,9 +97,7 @@ function noteclick(e) {
                 txtarea.value = item.body;
                 break
             }
-        
         }
-        
     }
 }
 
