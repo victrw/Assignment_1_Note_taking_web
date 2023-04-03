@@ -6,7 +6,6 @@ const bottom_buttons = document.querySelector(".bottombuttons")
 const new_button = document.querySelector("#new")
 const save_button = document.querySelector(".save")
 const ullist = document.querySelector("ul")
-darkthemebutton.textContent = "Dark Theme"
 let userinput 
 const bodytxt = txtarea.value
 

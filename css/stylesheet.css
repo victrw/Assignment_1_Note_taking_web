@@ -40,6 +40,8 @@ ul {
 li {
     float: left;
     clear: both;
+    cursor: pointer;
+
 }
 
 
